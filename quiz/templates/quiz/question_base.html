@@ -27,15 +27,14 @@
     <br>
 
     <!-- Navigation -->
-    {% if next_question %}
-      <a href="{% url 'question' next_question.id %}" class="btn btn-primary">
+    <button type="submit" class="btn {% if next_question %}btn-primary{% else %}btn-success{% endif %}">
+      {% if next_question %}
         Next
-      </a>
-    {% else %}
-      <button type="submit" class="btn btn-success">
-        <a class="text-black text-decoration-none" href="{% url 'results' %}">Finish Quiz </a>
-      </button>
-    {% endif %}
+       {% else %}
+        Finish Quiz
+      {% endif %}
+    </button>
+   
 
   </form>
 

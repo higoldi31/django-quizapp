@@ -2,6 +2,7 @@ from django.shortcuts import render,  get_object_or_404,redirect
 from .models import Question, Choice
 # Create your views here.
 def home(request):
+    
     first_question = Question.objects.order_by('id').first()
     return render(request, 'quiz/index.html', {
         'first_question': first_question,'name':'Goldi'
@@ -34,7 +35,7 @@ def question_page(request, id):
         if next_question:
             return redirect('question', id=next_question.id)
         else:
-            return redirect('result')
+            return redirect('results')
 
     return render(request, 'quiz/question_base.html', {
         'question': question,
