@@ -1,0 +1,13 @@
+{% extends 'quiz/base.html' %}
+
+{% block content %}
+    <h1 class="text-primary text-center mt-5">Hello, {{name}}</h1>
+    {% if first_question %}
+    <p class="text-center"><a href="{% url 'question' first_question.id %}" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Let's start quiz !</a></p>
+    {% else %}
+        <p>No questions available.</p>
+    {% endif %}
+
+
+{% endblock %}
+    
