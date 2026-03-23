@@ -1,0 +1,14 @@
+
+body {
+    background-image: url('images/catimage.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center-top;
+    background-color: #000;
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-height:100vh;
+}
+    
