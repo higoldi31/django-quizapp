@@ -29,15 +29,15 @@ A web-based Quiz Application built using Django that displays one question per p
 ## 📂 Project Structure
 quizapp/
 │
-├── quiz/ # Main app
-│ ├── models.py # Question & Choice models
-│ ├── views.py # Quiz logic
-│ ├── urls.py # Routing
-│ └── templates/
-│ └── quiz/
-│ ├── index.html
-│ ├── question_base.html
-│ └── results.html
+├── quiz/                     # Main app
+│   ├── models.py             # Question & Choice models
+│   ├── views.py              # Quiz logic
+│   ├── urls.py               # Routing
+│   └── templates/
+│       └── quiz/
+│           ├── index.html
+│           ├── question_base.html
+│           └── results.html
 │
 ├── db.sqlite3
 └── manage.py
