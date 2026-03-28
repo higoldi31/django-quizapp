@@ -5,7 +5,7 @@ def home(request):
     
     first_question = Question.objects.order_by('id').first()
     return render(request, 'quiz/index.html', {
-        'first_question': first_question,'name':'Goldi'
+        'first_question': first_question
     })
 
 
